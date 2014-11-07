@@ -11,13 +11,13 @@ $(function(){
 
 function setHandlers() {
 	$(".unprocessed .levels-button-plus").click(function(){
-		var levels = $(this).parent().parent().children('.levels-number');
+		var levels = $(this).parent().children('.levels-number');
 		var currentLevel = parseInt(levels.text());
 		levels.text(currentLevel+1);
 	});
 
 	$(".unprocessed .levels-button-minus").click(function(){
-		var levels = $(this).parent().parent().children('.levels-number');
+		var levels = $(this).parent().children('.levels-number');
 		var currentLevel = parseInt(levels.text());
 		if (currentLevel == 1) {return;}
 		levels.text(currentLevel-1);
