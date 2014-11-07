@@ -9,8 +9,6 @@ $(function(){
 	});
 });
 
-
-
 function setHandlers() {
 	$(".unprocessed .levels-button-plus").click(function(){
 		var levels = $(this).parent().parent().children('.levels-number');
@@ -27,10 +25,13 @@ function setHandlers() {
 
 	$(".unprocessed .label").click(function(){
 		$(this).parent().children('input').show().focus();
+		$(this).hide();
 	});
 
 	$(".unprocessed input").focusout(function(){
-		$(this).parent().children('.label').text($(this).val());
+		var name = $(this).val();
+		if ($.trim(name) == "") {name = "Player";}
+		$(this).parent().children('.label').show().text(name);
 		$(this).hide();
 	});
 
