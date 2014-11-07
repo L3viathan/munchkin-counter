@@ -9,14 +9,6 @@ html, body, div, span, ul, li, button, nav, input, * {
 	display: none;
 }
 
-.wrapper {
-	width: 640px;
-	min-width: 640px;
-	max-width: 640px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 input {
 	display: none;
 }
@@ -26,7 +18,7 @@ nav {
 	text-align: center;
 	font-size: large;
 	font-family: sans-serif;
-	padding: 5px;
+	padding: 20px;
 	font-weight: bold;
 }
 
@@ -39,8 +31,8 @@ button {
 	font-size: large;
 	border: 1px solid gray;
 	border-radius: 2px;
-	width: 23px;
-	height: 23px;
+	width: 33px;
+	height: 33px;
 }
 
 #list li {
