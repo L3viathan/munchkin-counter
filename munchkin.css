@@ -1,0 +1,54 @@
+html, body, div, span, ul, li, button, nav, input, * {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.prototype {
+	display: none;
+}
+
+input {
+	display: none;
+}
+
+nav {
+	box-shadow: 0px 0px 10px gray; /*#2889be;*/
+	text-align: center;
+	font-size: large;
+	font-family: sans-serif;
+	padding: 5px;
+	font-weight: bold;
+}
+
+nav button {
+	float: left;
+}
+
+button {
+	background: none;
+	font-size: large;
+	border: 1px solid gray;
+	border-radius: 2px;
+	width: 23px;
+	height: 23px;
+}
+
+#list li {
+	font-weight: bold;
+	font-family: sans-serif;
+	margin: 10px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px gray;
+	padding: 20px;
+}
+
+.levels {
+	float: right;
+}
+
+.levels-number {
+	font-size: 1.4em;
+}
